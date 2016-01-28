@@ -4,7 +4,6 @@
 package totp
 
 import (
-	"code.google.com/p/rsc/qr"
 	"crypto/hmac"
 	"crypto/sha1"
 	"encoding/base32"
@@ -13,6 +12,8 @@ import (
 	"net/url"
 	"strconv"
 	"time"
+	
+	"github.com/rsc/rsc/qr"
 )
 
 // BarcodeImage creates a QR code for use with Google Authenticator (GA).
